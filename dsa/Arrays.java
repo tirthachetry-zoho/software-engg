@@ -4,7 +4,7 @@ import java.util.*;
  * DSA — Arrays (LeetCode). Each method is a self-contained solution.
  * Run: javac Arrays.java && java Arrays
  */
-public class ArrayQ {
+public class Arrays {
 
     // LC #1 Two Sum — hashmap, O(n)
     public static int[] twoSum(int[] nums, int target) {
@@ -160,9 +160,9 @@ public class ArrayQ {
             while (nums[j] <= nums[i]) j--;
             swap(nums, i, j);
         }
-        reverse(nums, i + 1, nums.length - 1);
+        reverseRange(nums, i + 1, nums.length - 1);
     }
-    static void reverse(int[] nums, int start, int end) {
+    static void reverseRange(int[] nums, int start, int end) {
         while (start < end) { swap(nums, start++, end--); }
     }
 

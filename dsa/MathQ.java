@@ -1,8 +1,8 @@
 import java.util.*;
 
 /** DSA — Math (LeetCode). Each method has inline explanation.
- *  Run: javac Math.java && java Math */
-public class Math {
+ *  Run: javac Math.java && java MathQ */
+public class MathQ {
 
     // LC #7 Reverse Integer — Reverse digits with overflow check, O(log n) time
     // Explanation: Extract digits from end, rebuild reversed number, check overflow

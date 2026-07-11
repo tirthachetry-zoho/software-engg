@@ -11,6 +11,7 @@ public class Backtracking {
         if (i == a.length) { List<Integer> l = new ArrayList<>(); for (int x : a) l.add(x); res.add(l); return; }
         for (int j = i; j < a.length; j++) { swap(a, i, j); back(a, i + 1, res); swap(a, i, j); }
     }
+    static void swap(int[] a, int i, int j) { int t = a[i]; a[i] = a[j]; a[j] = t; }
 
     // LC #78 Subsets — O(2^n)
     public static List<List<Integer>> subsets(int[] a) {

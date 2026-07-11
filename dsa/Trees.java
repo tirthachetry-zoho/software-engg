@@ -78,7 +78,7 @@ public class Trees {
     public static TreeNode buildTree(int[] pre, int[] in) {
         Map<Integer, Integer> m = new HashMap<>();
         for (int i = 0; i < in.length; i++) m.put(in[i], i);
-        return build(pre, in, m, 0, 0, in.length - 1);
+        return build(pre, in, m, 0, in.length - 1);
     }
     static int pi = 0;
     static TreeNode build(int[] pre, int[] in, Map<Integer, Integer> m, int inL, int inR) {
